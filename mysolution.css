@@ -89,3 +89,159 @@
     border-radius: 40px;
     width: 500px;
  }
+
+ /* esercizio 10 */
+
+.ex-10-icon{
+    animation-name: circle;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+ 
+@keyframes circle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+ /* esercizio 11 */
+
+.ex-11-icon:hover{
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+
+ 
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    90%{
+        transform: rotate(300deg); 
+    }
+    100%{
+        transform: rotate(0deg); 
+    }
+}
+
+/* esercizio 12 */
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: topbutton;
+    animation-iteration-count: 8;
+    animation-duration: 3s;
+    
+}
+ 
+@keyframes topbutton{
+    0%{
+        left: 5%; 
+    }
+    50%{
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 5%; 
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: button;
+    animation-iteration-count: 8;
+    animation-duration: 3s;
+    
+}
+ 
+@keyframes button{
+    0%{
+        right: 5%; 
+    }
+    50%{
+        right: calc(100% - 60px);
+    }
+    100%{
+        right: 5%; 
+    }
+}
+
+
+/* esercizio 13 */
+
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: secondtopbutton;
+    animation-iteration-count: 8;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    
+}
+ 
+@keyframes secondtopbutton{
+    0%{
+        top: -10px;
+        left: 10%; 
+    }
+    25%{
+        top: -10px;
+        left: calc(100% - 30px); 
+    }
+    50%{
+        top: 100%;
+        left: calc(100% - 30px);
+    }
+    75%{
+        left: 0; 
+        top: 100%
+    }
+    90%{
+        left: -15px; 
+        top: -15px;
+    }
+
+    100%{
+        top: -10px;
+        left: 10%; 
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: secondbutton;
+    animation-iteration-count: 8;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    
+}
+ 
+@keyframes secondbutton{
+    0%{
+        bottom: -10px;
+        right: 10%; 
+    }
+    25%{
+        bottom: -10px;
+        right: calc(100% - 30px); 
+    }
+    50%{
+        bottom: 100%;
+        right: calc(100% - 30px);
+    }
+    75%{
+        right: 0; 
+        bottom: 100%
+    }
+    90%{
+        right: -15px; 
+        bottom: -15px;
+    }
+
+    100%{
+        bottom: -10px;
+        right: 10%; 
+    }
+}
+
